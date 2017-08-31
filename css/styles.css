@@ -75,14 +75,24 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.carousel-caption {
+#slide1 {
+	top: 50%;
+	left: 50%;
+}
+
+#slide2 {
+	top: 30%;
+}
+
+#slide3 {
+	right: 50%;
 	top: 40%;
 }
 
 .carousel-caption p {
 	font-family:  'Montserrat Alternates', Tahoma, Verdana, sans-serif;
 	color: #ee675f;
-	font-size: 5em;
+	font-size: 5.5em;
 	opacity: 0.9;
 	letter-spacing: 5px;
 }
@@ -245,6 +255,7 @@ h1 {
 
 #work-image:hover {
 	opacity: 0.7;
+	border-bottom: 5px solid #ee675f;
 }
 
 
@@ -351,7 +362,7 @@ footer p {
 
 .social i {
 	font-size: 450%;
-	padding: 2% 4%;
+	padding: 2% 3%;
 	color: #20b2aa;
 }
 
@@ -363,6 +374,13 @@ footer p {
 /*Media query*/
 
 /*responsive text on landing pictures*/
+@media (min-width: 768px) {
+	.modal-xl {
+		width: 90%;
+		max-width: 1200px;
+	}
+}
+
 @media(max-width: 768px) {
 	.carousel-caption p {
 		font-size: 4em;
