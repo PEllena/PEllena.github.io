@@ -20,7 +20,7 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
   });
 
-// Skills diagram
+// Skills diagram using Raphael
   var o = {
     init: function(){
       this.diagram();

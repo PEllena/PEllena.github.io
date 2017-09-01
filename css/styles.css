@@ -76,8 +76,8 @@ h1 {
 }
 
 #slide1 {
-	top: 50%;
-	left: 50%;
+	top: 55%;
+	left: 60%;
 }
 
 #slide2 {
@@ -275,6 +275,7 @@ h1 {
 #contact-page h1 {
 	text-align: center;
 	padding-bottom: 50px;
+	padding-top: 100px;
 }
 
 form {
@@ -384,6 +385,11 @@ footer p {
 @media(max-width: 768px) {
 	.carousel-caption p {
 		font-size: 4em;
+	}
+
+	#slide1 {
+		top: 40%;
+		left: 20%;
 	}
 
 	p {
