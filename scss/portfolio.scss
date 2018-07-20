@@ -241,6 +241,13 @@ a {
   display: block;
   max-width: 650px;
   margin: 0 auto;
+  margin-bottom: 20px;
+  img {
+    padding: 10px;
+  }
+  .img-thumbnail {
+    background: transparent;
+  }
   .portfolio-box-caption {
     position: absolute;
     bottom: 0;
@@ -249,8 +256,8 @@ a {
     height: 100%;
     text-align: center;
     opacity: 0;
-    color: $white;
-    background: fade-out(red, 0.1);
+    color: $background;
+    background: rgba(243, 244, 245, 0.7);
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;
@@ -263,11 +270,7 @@ a {
         padding: 0 15px;
         @include sans-serif-font;
       }
-      .project-category {
-        font-size: 14px;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
+
       .project-name {
         font-size: 18px;
       }
@@ -431,4 +434,9 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+// Vertical bars on both sides of main headings
+.bars {
+  color: $primary;
 }
