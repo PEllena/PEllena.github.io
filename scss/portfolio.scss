@@ -38,7 +38,7 @@ p {
   margin: 0 0 25px;
   @media (min-width: 768px) {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
 
     margin: 0 0 35px;
   }
@@ -258,6 +258,7 @@ a {
     opacity: 0;
     color: $background;
     background: rgba(243, 244, 245, 0.7);
+    border-radius: 5px;
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;
@@ -273,6 +274,12 @@ a {
 
       .project-name {
         font-size: 18px;
+      }
+      .project-description {
+        font-size: 16px;
+        color: $darkgrey;
+        text-align: justify;
+        padding: 0 20px;
       }
     }
   }
@@ -311,6 +318,11 @@ a {
       width: 100%;
       padding: 10px;
       outline: none;
+      color: $darkgrey;
+      font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      &:focus {
+        background-color: $lightgrey;
+      }
     }
     textarea {
       height: 10em;
@@ -342,8 +354,13 @@ a {
     .contact-button {
       background: #fff;
       color: $background;
+      letter-spacing: 1px;
       font-size: 18px;
-      text-transform: uppercase;
+      font-weight: 600;
+      font-family: sans-serif;
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }

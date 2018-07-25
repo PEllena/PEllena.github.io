@@ -33,7 +33,7 @@ p {
 @media (min-width: 768px) {
   p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0 0 35px;
   }
 }
@@ -239,6 +239,7 @@ a:focus, a:hover {
   opacity: 0;
   color: #214563;
   background: rgba(243, 244, 245, 0.7);
+  border-radius: 5px;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -260,6 +261,13 @@ a:focus, a:hover {
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-description {
+  font-size: 16px;
+  color: #102231;
+  text-align: justify;
+  padding: 0 20px;
 }
 
 .portfolio-box:hover .portfolio-box-caption {
@@ -296,6 +304,13 @@ a:focus, a:hover {
   width: 100%;
   padding: 10px;
   outline: none;
+  color: #102231;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  background-color: #e4e4e4;
 }
 
 #contact form textarea {
@@ -332,8 +347,14 @@ a:focus, a:hover {
 #contact form .contact-button {
   background: #fff;
   color: #214563;
+  letter-spacing: 1px;
   font-size: 18px;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+#contact form .contact-button:hover {
+  color: #42dca3;
 }
 
 @media (min-width: 992px) {
