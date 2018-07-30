@@ -244,6 +244,7 @@ a {
   margin-bottom: 20px;
   img {
     padding: 10px;
+    min-height: 260px;
   }
   .img-thumbnail {
     background: transparent;
@@ -254,10 +255,11 @@ a {
     display: block;
     width: 100%;
     height: 100%;
+    min-height: 260px;
     text-align: center;
     opacity: 0;
     color: $background;
-    background: rgba(243, 244, 245, 0.7);
+    background: rgba(243, 244, 245, 0.9);
     border-radius: 5px;
     @include transition-all;
     .portfolio-box-caption-content {
@@ -269,17 +271,21 @@ a {
       .project-category,
       .project-name {
         padding: 0 15px;
-        @include sans-serif-font;
       }
 
       .project-name {
         font-size: 18px;
+        margin: 5px;
       }
       .project-description {
         font-size: 16px;
-        color: $darkgrey;
+        color: $background;
         text-align: justify;
         padding: 0 20px;
+        margin-bottom: 10px;
+        @media (min-width: 768px) {
+          font-size: 16px;
+        }
       }
     }
   }
